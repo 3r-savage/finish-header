@@ -216,3 +216,55 @@ pre {
 .yellow-check {background-color: #dceb0e;}
 .pink-check {background-color: #ff6be6;}
 .red-check {background-color: #ff0000;}
+
+/*---------- Tip Box (เกร็ดความรู้) ----------*/
+.tip-box {
+  background-color: #fffbe6; /* พื้นหลังสีเหลืองครีมอ่อน */
+  border: 1px solid #ffe58f; /* เส้นขอบสีเหลืองทองอ่อน */
+  border-radius: 16px;       /* ขอบมนโค้งเรียบเนียน */
+  padding: 20px 24px;
+  margin: 20px 0;
+  
+  display: flex;
+  align-items: flex-start;  /* จัดให้อยู่ด้านบนซ้าย */
+  gap: 16px;                 /* ระยะห่างระหว่างไอคอนกับข้อความ */
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.02); /* เงาสนนบางๆ ให้มิติ */
+}
+
+/* ไอคอนหลอดไฟทรงวงกลมสีเหลือง */
+.tip-icon {
+  background-color: #ffc107; /* วงกลมสีเหลืองสด */
+  width: 44px;
+  height: 44px;
+  min-width: 44px;          /* ป้องกันไอคอนโดนบีบขนาด */
+  border-radius: 50%;       /* ทำเป็นรูปวงกลม */
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 22px;
+}
+
+/* ส่วนเนื้อหา */
+.tip-content h2 {
+  color: #78350f;            /* หัวข้อสีน้ำตาลเข้ม/ส้มอิฐ */
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 6px;
+}
+
+.tip-content p {
+  color: #4a4a4a;            /* สีข้อความอธิบาย */
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+/* ตกแต่งแท็กตัวอย่างในข้อความให้ออกเป็นสีฟ้าสดตามรูป */
+.tip-content strong,
+.tip-content em,
+.tip-content mark {
+  color: #1e5fec;            /* ตัวหนังสือสีฟ้า */
+  background: transparent;   /* ล้างสีพื้นหลังเนทีฟของ <mark> */
+  font-style: normal;        /* ยกเลิกตัวเอียงของ <em> */
+  font-weight: bold;
+}
