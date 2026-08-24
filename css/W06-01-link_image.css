@@ -244,14 +244,262 @@ figcaption {
 
 /* ----right sidebar----- */
 .right-sidebar {
-  border: 1px solid rgb(243, 59, 228);
-  padding: 15px;
-  margin: 15px;
+  /* border: 1px solid rgb(243, 59, 228); */
+  padding:0 15px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+
+}
+
+.side-card {
+  background-color: white;
+  border-radius: 12px;
+  padding: 16px 18px;
+  margin-bottom: 20px;
+}
+
+.side-card h3 {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.objective-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.objective-list li {
+  display: flex;
+  gap: 10px;
+  font-size: 14px;
+}
+
+.objective-num {
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  background-color: rgb(48, 36, 223);
+  color: white;
+  font-size: 12px;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* ---- tag menu ---- */
+.tag-menu {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+}
+
+.tag-menu span {
+  /* border: 1px solid rgb(243, 59, 228); */
+  border-radius: 30px;
+  padding: 4px 8px;
+  text-align: center;
+  font-size: 14px;
+}
+
+.tag-menu span:nth-child(1) {
+  background-color: rgba(57, 122, 253, 0.497);
+  color: rgb(32, 67, 247);
+}
+.tag-menu span:nth-child(2) {
+  background-color: rgba(59, 206, 243, 0.711);
+  color: rgb(18, 97, 255);
+}
+.tag-menu span:nth-child(3) {
+  background-color: rgba(87, 250, 138, 0.579);
+  color: rgb(16, 162, 45);
+}
+.tag-menu span:nth-child(4) {
+  background-color: rgba(254, 190, 94, 0.711);
+  color: rgb(255, 126, 21);
+}
+.tag-menu span:nth-child(5) {
+  background-color: rgba(255, 84, 241, 0.642);
+  color: rgb(186, 39, 254);
+}
+.tag-menu span:nth-child(6) {
+  background-color: rgba(243, 101, 101, 0.585);
+  color: rgb(247, 22, 22);
+}
+.tag-menu span:nth-child(7) {
+  background-color: rgba(101, 176, 247, 0.577);
+  color: rgb(55, 104, 253);
+}
+.tag-menu span:nth-child(8) {
+  background-color: rgba(249, 232, 83, 0.59);
+  color: rgb(255, 185, 35);
+}
+
+/*---- tag-activity ----*/
+.tag-activity {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.tag-activity li {
+  display: flex;
+  gap: 10px;
+  font-size: 14px;
+}
+
+.tag-activity span {
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  font-size: 12px;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.tag-activity li:nth-child(1) span{
+  background-color: rgb(48, 36, 223);
+  color: white;
+}
+.tag-activity li:nth-child(2) span {
+  background-color: rgb(36, 170, 223);
+  color: white;
+}
+.tag-activity li:nth-child(3) span {
+  background-color: rgb(36, 223, 111);
+  color: white;
+}
+.tag-activity li:nth-child(4) span {
+  background-color: rgb(201, 223, 36);
+  color: white;
+}
+.tag-activity li:nth-child(5) span {
+  background-color: rgb(223, 123, 36);
+  color: white;
+}
+.tag-activity li:nth-child(6) span {
+  background-color: rgb(223, 36, 173);
+  color: white;
+}
+
+/* ----- submit-card --- */
+.submit-card {
+  background-color: #f9eda1;
+  border: 1px solid #ffc278;
+
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.icon-plane {
+  font-size: 40px;
+}
+
+.submit-card p {
+  font-size: 16px;
+  color: rgb(58, 58, 58);
 }
 
 /* ---- tip box ---- */
 .tip-box {
-  border: 1px solid rgb(243, 59, 228);
+  border: 1px solid rgb(32, 30, 32);
   padding: 15px;
   margin: 15px;
+  border-radius: 12px;
+  background-color: rgb(244, 244, 244);
+  box-shadow: 0px 4px 12px rgba(113, 113, 113, 0.299);
+
+  display: grid;
+  grid-template-columns: 90px 1fr 170px;
+  gap: 22px; 
+  align-items: center;
+  
+}
+
+.tip-icon {
+  /* border: 1px solid rgb(0, 0, 0); */
+  width: 72px;
+  height: 72px;
+  font-size: 46px;
+  border-radius: 50%;
+  background-color: rgb(17, 34, 183);
+  color: white;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.tip-content h2 {
+  font-size: 24px;
+  color: rgb(76, 122, 251);
+  margin-bottom: 4px;
+}
+.tip-content p {
+  font-size: 16px;
+  color: rgb(58, 58, 58);
+}
+.tip-content span {
+  color: rgb(247, 12, 12);
+  font-weight: bold;
+}
+
+.tip-photo {
+  text-align: center;
+}
+.bob {
+  font-size: 46px;
+}
+.book {
+  font-size: 46px;
+}
+
+
+
+/* ------------ Responsive ------------- */
+@media (max-width: 1200px) {
+  .main-layout {
+  grid-template-columns: 1fr;
+  }
+  .right-sidebar {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-top: 20px;
+  padding: 0px;
+  }
+}
+
+@media (max-width: 768px) {
+  .site-header {
+  flex-direction: column;
+  align-items: center;
+}
+
+.nav-list {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .right-sidebar {
+  grid-template-columns: 1fr;
+  margin-top: 20px;
+  }
+
+  .tip-box {
+    grid-template-columns: 90px 1fr;
+  }
+
+  .tip-photo {
+    display: none;
+  }
+
+  
 }
