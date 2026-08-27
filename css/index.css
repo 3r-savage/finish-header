@@ -1,0 +1,184 @@
+:root {
+	--ink: #333;
+	--blue: #2d65b5;
+	--light-blue: #e8f4ff;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+html {
+	scroll-behavior: smooth;
+}
+
+body {
+	width: 100%;
+	margin: 0;
+	padding: 0 20px 35px;
+	color: var(--ink);
+	background-color: #f1f1f1;
+	font-family: Arial, sans-serif;
+	line-height: 1.6;
+}
+
+header {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	margin: 0 -20px 30px;
+	padding: 20px 35px;
+	color: #fff;
+	background-color: var(--blue);
+}
+
+header p {
+	margin: 0;
+	font-size: 18px;
+}
+
+nav a,
+a {
+	color: var(--blue);
+	font-weight: 500;
+	text-decoration: none;
+}
+
+header nav a {
+	display: inline-block;
+	padding: 4px 12px;
+	color: #fff;
+	border: 1px solid #fff;
+	border-radius: 4px;
+}
+
+a:hover,
+header nav a:hover {
+	color: #ffcc00;
+	text-decoration: underline;
+}
+
+body > h1 {
+	margin: 0;
+	color: var(--blue);
+	font-size: 42px;
+	line-height: 1.1;
+	letter-spacing: .01em;
+}
+
+body > h1 + p {
+	max-width: 680px;
+	margin: 10px 0 25px;
+	color: #666;
+}
+
+body > h2 {
+	margin: 0 0 14px;
+	color: var(--ink);
+	font-size: 28px;
+}
+
+body > ul {
+	display: grid;
+	margin: 0 0 30px;
+	padding-left: 28px;
+}
+
+body > ul li a {
+	color: var(--blue);
+}
+
+body > ul li a:hover {
+	color: #cc0000;
+	text-decoration: underline;
+}
+
+hr {
+	height: 1px;
+	margin: 28px 0;
+	border: 0;
+	background: #ccc;
+}
+
+section {
+	position: relative;
+	padding: 20px 24px;
+	background-color: #fff;
+	border: 1px solid #ccc;
+	border-radius: 6px;
+}
+
+section h2 {
+	margin: 0 0 8px;
+	color: #cc0000;
+	font-size: 25px;
+	line-height: 1.25;
+}
+
+section p {
+	color: #555;
+}
+
+section > a:last-child {
+	display: inline-block;
+	margin-top: 12px;
+	padding: 2px 8px;
+	color: #fff;
+	background: var(--blue);
+	border-radius: 3px;
+	font-size: 14px;
+}
+
+section > a:last-child:hover {
+	color: #fff;
+	background: #cc0000;
+	text-decoration: none;
+}
+
+pre {
+	margin: 15px 0 0;
+	padding: 12px 15px;
+	overflow: auto;
+	color: #fff;
+	background-color: #333;
+	border-left: 4px solid #1687d9;
+	border-radius: 4px;
+	font-size: 14px;
+	line-height: 1.5;
+	white-space: pre-wrap;
+}
+
+.text-center {
+	margin-top: 25px;
+	padding-top: 18px;
+	text-align: left;
+	border-top: 1px solid #ccc;
+}
+
+footer p {
+	margin: 10px 0 0;
+	color: #666;
+	font-size: 14px;
+}
+
+@media (max-width: 640px) {
+	body {
+		padding: 0 12px 25px;
+		font-size: 16px;
+	}
+
+	header {
+		align-items: flex-start;
+		flex-direction: column;
+		margin: 0 -12px 25px;
+		padding: 18px 20px;
+	}
+
+	section {
+		padding: 18px 16px;
+	}
+
+	pre {
+		font-size: 12px;
+	}
+}
